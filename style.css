@@ -135,7 +135,9 @@ footer a {
     color: #05bbfb;
     text-decoration: underline;
 }
-
+.hamburger {
+    display: none;
+}
 /* Responsive Design */
 @media (max-width: 1024px) {
     .services-hero h1 {
