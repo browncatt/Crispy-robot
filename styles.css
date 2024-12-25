@@ -44,33 +44,6 @@ body {
     color: #05bbfb;
 }
 
-.search-bar {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.search-bar input {
-    padding: 5px 10px;
-    border: 1px solid rgba(39, 65, 78, 0.5);
-    border-radius: 20px;
-    outline: none;
-}
-
-.search-bar button {
-    background: #05bbfb;
-    border: none;
-    color: #ffffff;
-    padding: 5px 15px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.search-bar button:hover {
-    background: #23556a;
-}
-
 /* Hero Section */
 .hero {
     display: flex;
