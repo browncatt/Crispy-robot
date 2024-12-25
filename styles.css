@@ -115,33 +115,33 @@ body {
 
 /* Service Selection (Fix Misalignment) */
 .service-selection {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 30px 50px;
-    flex-wrap: wrap;  /* Allow wrapping on smaller screens */
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   padding: 30px 50px;
+   background: #ffffff;
 }
 
+
 .service-selection select {
-    padding: 10px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    font-size: 1em;
-    min-width: 250px;  /* Consistent dropdown width */
+     padding: 10px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            font-size: 1em;
 }
 
 /* Footer */
 footer {
-    background: #27414e;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
+     background: #27414e; /* Dark Accent */
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
 }
 
 footer a {
-    color: #6ad0f1;
-    text-decoration: none;
+   color: #6ad0f1;
+   text-decoration: none;
 }
 
 footer a:hover {
