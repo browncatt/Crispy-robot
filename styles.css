@@ -1,0 +1,152 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f9fc;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: linear-gradient(to right, #6ad0f1, #ffffff);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #27414e;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #27414e;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #05bbfb;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    border: 1px solid rgba(39, 65, 78, 0.5);
+    border-radius: 20px;
+    outline: none;
+}
+
+.search-bar button {
+    background: #05bbfb;
+    border: none;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-bar button:hover {
+    background: #23556a;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #27414e;
+}
+
+/* Hide menu for small screens */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background: #ffffff;
+        position: absolute;
+        top: 60px;
+        right: 30px;
+        padding: 10px 20px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .search-bar {
+        margin-top: 10px;
+    }
+}
+
+/* Responsive Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #6ad0f1, #ffffff);
+    padding: 100px 50px;
+}
+
+.hero .content {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.hero img {
+    max-width: 40%;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .hero .content {
+        max-width: 100%;
+    }
+
+    .hero img {
+        max-width: 80%;
+    }
+}
