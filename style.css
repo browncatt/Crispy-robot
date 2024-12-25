@@ -144,9 +144,7 @@ footer a {
     color: #05bbfb;
     text-decoration: underline;
 }
-.hamburger {
-    display: none;
-}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .services-hero h1 {
@@ -164,55 +162,43 @@ footer a {
     .service-card {
         height: 180px;
     }
-     .hamburger {
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hamburger {
         display: block;
         position: absolute;
         right: 20px;
         top: 15px;
     }
-}
-
-@media (max-width: 768px) {
-     .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 20px;
-    }
-    nav {
-        flex-direction: column;
-        text-align: center;
-    }
     .nav-links {
         display: none;
         flex-direction: column;
         width: 100%;
-        text-align: center;
         background: #ffffff;
         position: absolute;
         top: 60px;
         right: 0;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
     }
-     .nav-links.active {
+    .nav-links.active {
         display: flex;
-     }
+    }
     .services-hero {
         padding: 30px 15px;
     }
     .services-hero h1 {
         font-size: 1.8em;
     }
-    .services-hero p {
-        font-size: 1em;
-    }
     .services-grid {
         grid-template-columns: 1fr;
         padding: 30px 15px;
-    }
-    
-    .cta h2 {
-        font-size: 1.5em;
     }
 }
 
@@ -226,12 +212,6 @@ footer a {
     .service-card {
         height: 160px;
     }
-     .hamburger {
-        display: block;
-        position: absolute;
-        right: 20px;
-        top: 15px;
-    }
     button {
         padding: 8px 16px;
         font-size: 0.9em;
@@ -239,10 +219,8 @@ footer a {
     .cta h2 {
         font-size: 1.3em;
     }
-    .cta p {
-        font-size: 1em;
-    }
     footer {
         padding: 15px;
     }
 }
+
