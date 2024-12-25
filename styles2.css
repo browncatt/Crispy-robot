@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: linear-gradient(to right, #6ad0f1, #ffffff);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #27414e;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.nav-links a {
+    color: #27414e;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #05bbfb;
+}
+
+/* Hero Section */
+.services-hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #6ad0f1, #acf5ff);
+    color: #27414e;
+}
+.services-hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.services-hero p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px 30px;
+}
+.service-card {
+    width: 100%;
+    max-width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    margin: 10px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.smart-diagnosis {
+    background-image: url('smart diagnosis.jpg');
+}
+.chronic-management {
+    background-image: url('chronic diseases.jpg');
+}
+.emergency-care {
+    background-image: url('emergency care.jpg');
+}
+
+/* Call-to-Action */
+.cta {
+    text-align: center;
+    padding: 50px 20px;
+    background: #27414e;
+    color: #ffffff;
+}
+.cta button {
+    background: #05bbfb;
+    color: white;
+}
+.cta button:hover {
+    background: #6ad0f1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #23556a;
+    color: white;
+}
+footer a {
+    color: #05bbfb;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .services-hero h1 {
+        font-size: 2em;
+    }
+    .services-hero p {
+        font-size: 1em;
+    }
+    nav {
+        padding: 10px 20px;
+    }
+    .nav-links {
+        gap: 15px;
+    }
+    .service-card {
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .services-hero {
+        padding: 30px 15px;
+    }
+    .services-hero h1 {
+        font-size: 1.8em;
+    }
+    .services-hero p {
+        font-size: 1em;
+    }
+    .services-grid {
+        grid-template-columns: 1fr;
+        padding: 30px 15px;
+    }
+    .cta h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-hero h1 {
+        font-size: 1.5em;
+    }
+    .services-hero p {
+        font-size: 0.9em;
+    }
+    .service-card {
+        height: 160px;
+    }
+    button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+    .cta h2 {
+        font-size: 1.3em;
+    }
+    .cta p {
+        font-size: 1em;
+    }
+    footer {
+        padding: 15px;
+    }
+}
