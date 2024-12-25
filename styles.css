@@ -129,6 +129,20 @@ body {
 .hero p {
     font-size: 1.2em;
 }
+.hero .btn {
+    background: #27414e;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    display: inline-block;
+}
+
+.hero .btn:hover {
+    background: #23556a;
+}
 
 .hero img {
     max-width: 40%;
