@@ -151,9 +151,10 @@ footer a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 50px 20px;
+        display: block;
+        position: absolute;
+        right:20px;
+        top: 15px;
     }
 
     .hero .content {
@@ -182,7 +183,7 @@ footer a:hover {
     }
 
     .hamburger {
-        display: block;
+        display: none;
     }
 
     .search-bar {
