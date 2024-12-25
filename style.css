@@ -41,12 +41,21 @@ nav {
     font-size: 1.2em;
     color: #27414e;
 }
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: #27414e;
+}
 .nav-links {
     display: flex;
     list-style: none;
     gap: 20px;
 }
 .nav-links a {
+    text-decoration: none;
     color: #27414e;
     font-weight: bold;
     transition: color 0.3s;
