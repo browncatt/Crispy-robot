@@ -210,12 +210,7 @@ footer a {
         grid-template-columns: 1fr;
         padding: 30px 15px;
     }
-     .hamburger {
-        display: block;
-        position: absolute;
-        right: 20px;
-        top: 15px;
-    }
+    
     .cta h2 {
         font-size: 1.5em;
     }
