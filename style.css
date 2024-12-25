@@ -41,6 +41,8 @@ nav {
     font-size: 1.2em;
     color: #27414e;
 }
+
+/* Hamburger Menu */
 .hamburger {
     display: none;
     background: none;
@@ -49,19 +51,38 @@ nav {
     cursor: pointer;
     color: #27414e;
 }
+
+/* Navigation Links (Dropdown Style) */
 .nav-links {
-    display: flex;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     list-style: none;
-    gap: 20px;
+    padding: 10px 0;
+    text-align: center;
+    width: 200px;
 }
+
+.nav-links.active {
+    display: flex;
+}
+
 .nav-links a {
-    text-decoration: none;
+    padding: 10px 20px;
     color: #27414e;
     font-weight: bold;
-    transition: color 0.3s;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
 }
+
 .nav-links a:hover {
-    color: #05bbfb;
+    background-color: #f4f9fc;
 }
 
 /* Hero Section */
@@ -172,20 +193,9 @@ footer a {
     }
     .hamburger {
         display: block;
-        position: absolute;
-        right: 20px;
-        top: 15px;
     }
     .nav-links {
         display: none;
-        flex-direction: column;
-        width: 100%;
-        background: #ffffff;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
     }
     .nav-links.active {
         display: flex;
@@ -223,4 +233,5 @@ footer a {
         padding: 15px;
     }
 }
+
 
