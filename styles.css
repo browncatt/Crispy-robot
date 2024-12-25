@@ -147,6 +147,9 @@ footer a {
 footer a:hover {
     color: #05bbfb;
 }
+ .hamburger {
+        display: none;
+    }
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -182,9 +185,7 @@ footer a:hover {
         display: flex;
     }
 
-    .hamburger {
-        display: none;
-    }
+   
 
     .search-bar {
         margin-top: 10px;
