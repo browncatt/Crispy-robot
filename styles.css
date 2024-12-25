@@ -88,57 +88,71 @@ body {
 
 /* Service Selection (Fix Misalignment) */
 .service-selection {
-   display: flex;
-   justify-content: center;
-   gap: 20px;
-   padding: 30px 50px;
-   background: #ffffff;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 50px;
+    background: #ffffff;
 }
 
-
 .service-selection select {
-     padding: 10px;
-            border-radius: 20px;
-            border: 1px solid #ccc;
-            font-size: 1em;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 1em;
 }
 
 /* Footer */
 footer {
-     background: #27414e; /* Dark Accent */
-            color: #ffffff;
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9em;
+    background: #27414e;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
 }
 
 footer a {
-   color: #6ad0f1;
-   text-decoration: none;
+    color: #6ad0f1;
+    text-decoration: none;
 }
 
 footer a:hover {
     color: #05bbfb;
 }
- .hamburger {
-        display: none;
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+}
+
+/* Responsive Design (Fixing Overlap and Alignment) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero {
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .search-bar input {
+        width: 60%;
+    }
+
+    .hamburger {
         display: block;
         position: absolute;
-        right:20px;
+        right: 20px;
         top: 15px;
-    }
-
-    .hero .content {
-        max-width: 100%;
-    }
-
-    .hero img {
-        max-width: 80%;
     }
 
     .nav-links {
@@ -158,10 +172,47 @@ footer a:hover {
         display: flex;
     }
 
-   
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
 
-    .search-bar {
-        margin-top: 10px;
+    .hero .content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .hero img {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+
+    .hero .btn {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+
+    .service-selection {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .service-selection select {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    footer {
+        font-size: 0.8em;
+        padding: 15px;
     }
 }
-
