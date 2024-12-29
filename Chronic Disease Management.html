@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chronic Disease Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>Chronic Disease Management</nav>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Manage Chronic Diseases with Ease</h1>
+    <p>Track your symptoms, get AI-powered insights, and manage medications in one place.</p>
+  </div>
+
+  <!-- Features Section -->
+  <div class="features">
+    <div class="feature-card">
+      <h3>Symptom Tracker</h3>
+      <p>Log your symptoms and track your progress over time.</p>
+      <button onclick="openPopup('tracker')">Learn More</button>
+    </div>
+    <div class="feature-card">
+      <h3>AI Insights</h3>
+      <p>Receive recommendations based on your health data.</p>
+      <button onclick="openPopup('ai')">Learn More</button>
+    </div>
+    <div class="feature-card">
+      <h3>Medication Reminders</h3>
+      <p>Stay on top of your medication schedule with reminders.</p>
+      <button onclick="openPopup('medication')">Learn More</button>
+    </div>
+  </div>
+
+  <!-- Popup Modals -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Symptom Tracker Popup -->
+  <div class="popup" id="tracker-popup">
+    <h3>Symptom Tracker</h3>
+    <p>Log your symptoms below:</p>
+    <input type="text" id="symptom-input" placeholder="Enter symptom" required>
+    <button onclick="logSymptom()">Add Symptom</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Symptom</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="symptom-table">
+        <!-- Symptom rows will be added here dynamically -->
+      </tbody>
+    </table>
+    <button onclick="closePopup()">Close</button>
+  </div>
+
+  <!-- Medication Reminders Popup -->
+  <div class="popup" id="medication-popup">
+    <h3>Medication Reminders</h3>
+    <p>Set your medication schedule:</p>
+    <input type="text" id="medication-input" placeholder="Medication Name" required>
+    <input type="time" id="medication-time" required>
+    <button onclick="addReminder()">Add Reminder</button>
+    <ul id="reminder-list">
+      <!-- Reminders will be added here -->
+    </ul>
+    <button onclick="closePopup()">Close</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
